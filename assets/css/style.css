@@ -29,11 +29,11 @@ body::before {
   z-index: -1;
 }
 
-#header > img.main-img {
-  height: 350px;
+#header > div > img.main-img {
+  height: 550px;
   border: none solid 1px;
   border-radius: 100%;
-  margin-left: 26rem;
+  /* margin-left: 26rem; */
 }
 
 @media (min-width: 1024px) {
@@ -72,6 +72,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #header * {
   transition: ease-in-out 0.3s;
+}
+
+#header div.img-container {
+  padding: 31rem;
+}
+
+#header div.info-container {
+  position: fixed;
+  right: 8rem;
 }
 
 #header h1 {
@@ -142,12 +151,17 @@ h1, h2, h3, h4, h5, h6 {
   }
   #header .social-links {
     margin-top: 100px;
+    position: absolute;
+    right: -1rem;
 
   }
-  #header .container {
+  #header div.info-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute; 
+    right: 1rem;
+    gap: 4rem;
   }
 }
 
